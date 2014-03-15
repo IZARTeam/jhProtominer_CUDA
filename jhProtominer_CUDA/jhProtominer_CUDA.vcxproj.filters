@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="crypto">
+      <UniqueIdentifier>{e2a4d212-6b5c-448c-b8c7-cef515df78aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="algorithm">
+      <UniqueIdentifier>{d0dd63f1-7163-4c0b-8faa-0cb4ecb43a9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="xpt">
+      <UniqueIdentifier>{3fd65f77-1a48-4c98-b207-41973a1bd047}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="transaction">
+      <UniqueIdentifier>{cf25c9ea-2cbf-4760-a5a4-6d886b499788}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jhlib">
+      <UniqueIdentifier>{7b90a6c1-69d1-4fb9-8c21-4a70364946c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cuda">
+      <UniqueIdentifier>{4fe96c65-f7ee-480f-a765-8e86d49a06d5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="algorithm.h">
+      <Filter>algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="sha2.h">
+      <Filter>crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="xptClient.h">
+      <Filter>xpt</Filter>
+    </ClInclude>
+    <ClInclude Include="xptServer.h">
+      <Filter>xpt</Filter>
+    </ClInclude>
+    <ClInclude Include="transaction.h">
+      <Filter>transaction</Filter>
+    </ClInclude>
+    <ClInclude Include="jhlib.h">
+      <Filter>jhlib</Filter>
+    </ClInclude>
+    <ClInclude Include="global.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="protosharesMiner.cpp">
+      <Filter>algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="sha2.cpp">
+      <Filter>crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="xptClient.cpp">
+      <Filter>xpt</Filter>
+    </ClCompile>
+    <ClCompile Include="xptClientPacketHandler.cpp">
+      <Filter>xpt</Filter>
+    </ClCompile>
+    <ClCompile Include="xptPacketbuffer.cpp">
+      <Filter>xpt</Filter>
+    </ClCompile>
+    <ClCompile Include="xptServer.cpp">
+      <Filter>xpt</Filter>
+    </ClCompile>
+    <ClCompile Include="xptServerPacketHandler.cpp">
+      <Filter>xpt</Filter>
+    </ClCompile>
+    <ClCompile Include="transaction.cpp">
+      <Filter>transaction</Filter>
+    </ClCompile>
+    <ClCompile Include="jhlib.cpp">
+      <Filter>jhlib</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="protosharesMiner.cu">
+      <Filter>cuda</Filter>
+    </CudaCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="sha2.cuh">
+      <Filter>cuda</Filter>
+    </None>
+  </ItemGroup>
+</Project>

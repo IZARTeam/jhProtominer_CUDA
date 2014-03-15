@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="cuda">
+      <UniqueIdentifier>{64cd0941-61d1-4039-b1b3-35a810df54db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="crypto">
+      <UniqueIdentifier>{e1612b09-ebb5-4ac6-b85b-cfb89509dcec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="algorithm">
+      <UniqueIdentifier>{f234684a-ff76-4a0f-96ab-388b6f4df67b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="..\jhProtominer_CUDA\protosharesMiner.cu">
+      <Filter>cuda</Filter>
+    </CudaCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\jhProtominer_CUDA\sha2.cuh">
+      <Filter>cuda</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\jhProtominer_CUDA\sha2.cpp">
+      <Filter>crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jhProtominer_CUDA\protosharesMiner.cpp">
+      <Filter>algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\jhProtominer_CUDA\sha2.h">
+      <Filter>crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jhProtominer_CUDA\algorithm.h">
+      <Filter>algorithm</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

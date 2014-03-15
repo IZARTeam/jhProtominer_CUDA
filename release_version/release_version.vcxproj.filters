@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="algorithm">
+      <UniqueIdentifier>{37fd7694-20b5-4162-b242-92cbee2a78e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="crypto">
+      <UniqueIdentifier>{ff773495-18c6-4c8f-b3a9-c41113618884}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cuda">
+      <UniqueIdentifier>{243c2b0f-df4f-43ea-8997-ef23643e546c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jhlib">
+      <UniqueIdentifier>{bd068579-c278-41e5-b559-e83b9880a2f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="transaction">
+      <UniqueIdentifier>{d3901631-e7d6-4551-b946-636b5262a359}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="xpt">
+      <UniqueIdentifier>{e5b77e91-70b7-457d-abce-e41dac86cbbc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\jhProtominer_CUDA\protosharesMiner.cpp">
+      <Filter>algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jhProtominer_CUDA\sha2.cpp">
+      <Filter>crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jhProtominer_CUDA\jhlib.cpp">
+      <Filter>jhlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jhProtominer_CUDA\transaction.cpp">
+      <Filter>transaction</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jhProtominer_CUDA\xptClient.cpp">
+      <Filter>xpt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jhProtominer_CUDA\xptClientPacketHandler.cpp">
+      <Filter>xpt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jhProtominer_CUDA\xptPacketbuffer.cpp">
+      <Filter>xpt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jhProtominer_CUDA\xptServer.cpp">
+      <Filter>xpt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jhProtominer_CUDA\xptServerPacketHandler.cpp">
+      <Filter>xpt</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\jhProtominer_CUDA\algorithm.h">
+      <Filter>algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jhProtominer_CUDA\sha2.h">
+      <Filter>crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jhProtominer_CUDA\jhlib.h">
+      <Filter>jhlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jhProtominer_CUDA\transaction.h">
+      <Filter>transaction</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jhProtominer_CUDA\xptClient.h">
+      <Filter>xpt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jhProtominer_CUDA\xptServer.h">
+      <Filter>xpt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jhProtominer_CUDA\global.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\jhProtominer_CUDA\sha2.cuh">
+      <Filter>cuda</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="..\jhProtominer_CUDA\protosharesMiner.cu">
+      <Filter>cuda</Filter>
+    </CudaCompile>
+  </ItemGroup>
+</Project>
